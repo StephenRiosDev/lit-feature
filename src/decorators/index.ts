@@ -7,4 +7,4 @@ export type { ProvideDefinition } from './provide.js';
 export { configure } from './configure.js';
 export type { ConfigureOptions } from './configure.js';
 
-export { FEATURE_META } from './feature-meta.js';
+export { property } from './feature-property.js';

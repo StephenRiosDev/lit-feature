@@ -3,6 +3,7 @@ import type { CSSResult, CSSResultGroup, PropertyDeclaration } from 'lit';
 import type { ReactiveController } from 'lit';
 import { DebugUtils } from './debug-utils.js';
 import { performanceMonitor } from './performance-monitor.js';
+import { LIT_FEATURE_MARKER } from './types/feature-types.js';
 
 /**
  * Base interface for feature configuration objects
@@ -21,7 +22,7 @@ export interface FeatureProperties {
  * Base class for all features in the system.
  * Features extend this class to add functionality to LitCore components.
  */
-export const LIT_FEATURE_MARKER = Symbol('litFeature');
+export { LIT_FEATURE_MARKER };
 
 export abstract class LitFeature<TConfig extends FeatureConfig = FeatureConfig> implements ReactiveController {
   static readonly [LIT_FEATURE_MARKER] = true;

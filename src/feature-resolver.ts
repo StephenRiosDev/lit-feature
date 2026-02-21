@@ -8,9 +8,8 @@ import type {
   LitCoreConstructor,
   FeatureConfig
 } from './types/feature-types.js';
-import { LitFeature, LIT_FEATURE_MARKER } from './lit-feature.js';
-import { LIT_CORE_MARKER } from './lit-core.js';
-import { FEATURE_META } from './decorators/feature-meta.js';
+import { FEATURE_META, LIT_CORE_MARKER, LIT_FEATURE_MARKER } from './types/feature-types.js';
+import { LitFeature } from './lit-feature.js';
 import { getFeaturePropertyMetadata } from './decorators/feature-property.js';
 import { DebugUtils } from './debug-utils.js';
 

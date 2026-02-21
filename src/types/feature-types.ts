@@ -1,6 +1,27 @@
+import type { PropertyDeclaration, CSSResultGroup } from 'lit';
 import type { LitCore } from '../lit-core.js';
 import type { LitFeature, FeatureConfig, FeatureProperties } from '../lit-feature.js';
-import type { PropertyDeclaration, CSSResultGroup } from 'lit';
+
+/**
+ * Marker symbol for LitCore-based classes.
+ * Used to identify classes that extend LitCore during inheritance chain resolution.
+ * Uses Symbol.for() to ensure the same symbol instance across all module boundaries.
+ */
+export const LIT_CORE_MARKER = Symbol.for('lit-feature:litCore');
+
+/**
+ * Marker symbol for LitFeature-based classes.
+ * Used to identify classes that extend LitFeature during inheritance chain resolution.
+ * Uses Symbol.for() to ensure the same symbol instance across all module boundaries.
+ */
+export const LIT_FEATURE_MARKER = Symbol.for('lit-feature:litFeature');
+
+/**
+ * Unified metadata symbol for all feature-related metadata.
+ * This single symbol holds provide, configure, and featureProperties.
+ * Uses Symbol.for() to ensure the same symbol instance across all module boundaries.
+ */
+export const FEATURE_META = Symbol.for('lit-feature:featureMeta');
 
 /**
  * Type for a feature class constructor

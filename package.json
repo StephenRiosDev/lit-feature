@@ -1,43 +1,48 @@
 {
   "name": "lit-feature",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Core functionalities and components for integrating with the Lit framework.",
-  "main": "dist/index.cjs",
-  "types": "dist/index.d.ts",
+  "main": "index.cjs",
+  "types": "index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./index.cjs"
     },
     "./decorators": {
-      "types": "./dist/decorators/index.d.ts",
-      "import": "./dist/decorators/index.js",
-      "require": "./dist/decorators/index.cjs"
+      "types": "./decorators/index.d.ts",
+      "import": "./decorators/index.js",
+      "require": "./decorators/index.cjs"
     },
     "./lit-core": {
-      "types": "./dist/lit-core.d.ts",
-      "import": "./dist/lit-core.js",
-      "require": "./dist/lit-core.cjs"
+      "types": "./lit-core.d.ts",
+      "import": "./lit-core.js",
+      "require": "./lit-core.cjs"
     },
     "./lit-feature": {
-      "types": "./dist/lit-feature.d.ts",
-      "import": "./dist/lit-feature.js",
-      "require": "./dist/lit-feature.cjs"
+      "types": "./lit-feature.d.ts",
+      "import": "./lit-feature.js",
+      "require": "./lit-feature.cjs"
     },
     "./types": {
-      "types": "./dist/types/index.d.ts",
-      "import": "./dist/types/index.js",
-      "require": "./dist/types/index.cjs"
+      "types": "./types/index.d.ts",
+      "import": "./types/index.js",
+      "require": "./types/index.cjs"
     },
     "./types/feature-types": {
-      "types": "./dist/types/feature-types.d.ts",
-      "import": "./dist/types/feature-types.js",
-      "require": "./dist/types/feature-types.cjs"
+      "types": "./types/feature-types.d.ts",
+      "import": "./types/feature-types.js",
+      "require": "./types/feature-types.cjs"
     }
   },
   "files": [
-    "dist",
+    "*.js",
+    "*.cjs",
+    "*.d.ts",
+    "*.map",
+    "decorators/",
+    "types/",
     "README.md",
     "LICENSE"
   ],
@@ -48,18 +53,25 @@
     "test": "echo \"No tests specified\" && exit 0"
   },
   "dependencies": {
-    "lit": "^2.0.0",
     "lodash.merge": "^4.6.2"
   },
   "devDependencies": {
-    "@types/lodash.merge": "^4.6.9",
+    "@lit/reactive-element": "^2.0.0",
     "@semantic-release/commit-analyzer": "^12.0.0",
     "@semantic-release/github": "^10.0.0",
     "@semantic-release/npm": "^12.0.0",
     "@semantic-release/release-notes-generator": "^13.0.0",
+    "@types/lodash.merge": "^4.6.9",
+    "lit": "^3.0.0",
+    "lit-html": "^3.0.0",
     "semantic-release": "^24.0.0",
     "tsup": "^8.0.1",
     "typescript": "^4.0.0"
+  },
+  "peerDependencies": {
+    "@lit/reactive-element": "^2.0.0",
+    "lit": "^3.0.0",
+    "lit-html": "^3.0.0"
   },
   "repository": {
     "type": "git",

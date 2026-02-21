@@ -1,11 +1,8 @@
 import type { PropertyDeclaration } from 'lit';
 import type { FeatureConfigEntry, FeatureDefinition, FeatureMeta } from '../types/feature-types.js';
+import { FEATURE_META } from '../types/feature-types.js';
 
-/**
- * Unified metadata symbol for all feature-related metadata.
- * This single symbol holds provide, configure, and featureProperties.
- */
-export const FEATURE_META = Symbol('litFeatureMeta');
+// FEATURE_META is internal-only, not exported from this module
 
 /**
  * Get or initialize the unified FeatureMeta for a constructor

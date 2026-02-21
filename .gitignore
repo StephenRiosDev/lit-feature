@@ -6,6 +6,25 @@ coverage/
 *.log
 *.tsbuildinfo
 *.tgz
+
+# Built outputs at root (for publishing)
+/*.js
+/*.cjs
+/*.d.ts
+/*.d.mts
+/*.d.ts.map
+/*.js.map
+/*.cjs.map
+/decorators/*.js
+/decorators/*.cjs
+/decorators/*.d.ts
+/decorators/*.d.mts
+/decorators/*.map
+/types/*.js
+/types/*.cjs
+/types/*.d.ts
+/types/*.d.mts
+/types/*.map
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

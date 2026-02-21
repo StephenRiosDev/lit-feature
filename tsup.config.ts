@@ -14,12 +14,13 @@ export default defineConfig({
   format: ['esm', 'cjs'],
   dts: true,
   sourcemap: true,
-  clean: true,
+  outDir: '.',
+  clean: false,
   splitting: false,
   treeshake: true,
   bundle: true,
   target: 'es2020',
-  external: ['lit', 'lodash.merge'],
+  external: ['lit', '@lit/reactive-element', 'lit-html', 'lodash.merge'],
   outExtension({ format }) {
     return format === 'esm' ? { js: '.js' } : { js: '.cjs' };
   }

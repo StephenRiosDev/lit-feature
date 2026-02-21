@@ -2,12 +2,14 @@ import { LitElement, PropertyDeclaration } from 'lit';
 import { FeatureConfigEntry, FeatureDefinition, FeatureManager, LitCoreConstructor } from './services/feature-manager.js';
 import { resolveFeatures } from './feature-resolver.js';
 import { performanceMonitor } from './performance-monitor.js';
+import { LIT_CORE_MARKER } from './types/feature-types.js';
 
 /**
  * Symbol to mark classes that extend LitCore.
  * Used by the resolver to detect when to stop walking the inheritance chain.
+ * Exported for re-export compatibility and clarity.
  */
-export const LIT_CORE_MARKER = Symbol('litCore');
+export { LIT_CORE_MARKER };
 
 /**
  * Base class for web components with feature management capabilities.

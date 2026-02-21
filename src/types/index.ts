@@ -1,5 +1,5 @@
 /**
- * Type definitions for the LitFeature system
+ * Type definitions and symbols for the LitFeature system
  */
 export type {
   FeatureClass,
@@ -10,3 +10,6 @@ export type {
   LitCoreConstructor,
   FeatureConfig
 } from './feature-types.js';
+
+// Symbols are internal-only and accessed via Symbol.for() when needed
+// They should not be part of the public API

@@ -1,5 +1,6 @@
 import type { PropertyDeclaration } from 'lit';
-import { FEATURE_META, getOrCreateFeatureMeta } from './feature-meta.js';
+import { FEATURE_META } from '../types/feature-types.js';
+import { getOrCreateFeatureMeta } from './feature-meta.js';
 
 /**
  * Decorator for defining reactive properties on feature classes.
