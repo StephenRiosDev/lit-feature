@@ -1,0 +1,12 @@
+src/
+node_modules/
+*.log
+*.tsbuildinfo
+coverage/
+.vscode/
+.idea/
+.DS_Store
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
