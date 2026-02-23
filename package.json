@@ -1,6 +1,6 @@
 {
   "name": "lit-feature",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Core functionalities and components for integrating with the Lit framework.",
   "main": "index.cjs",
   "types": "index.d.ts",
