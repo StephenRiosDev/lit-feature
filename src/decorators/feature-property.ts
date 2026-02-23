@@ -54,6 +54,3 @@ export function getFeaturePropertyMetadata(ctor: any): Record<string, PropertyDe
   });
   return result;
 }
-
-/** @deprecated Use FEATURE_META instead */
-export const FEATURE_PROPERTIES_META = Symbol('featurePropertiesMeta');

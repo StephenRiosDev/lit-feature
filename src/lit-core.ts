@@ -1,8 +1,8 @@
 import { LitElement, PropertyDeclaration } from 'lit';
-import { FeatureConfigEntry, FeatureDefinition, FeatureManager, LitCoreConstructor } from './services/feature-manager.js';
+import { FeatureManager } from './services/feature-manager.js';
 import { resolveFeatures } from './feature-resolver.js';
 import { performanceMonitor } from './performance-monitor.js';
-import { LIT_CORE_MARKER } from './types/feature-types.js';
+import { LIT_CORE_MARKER, FeatureConfigEntry, FeatureDefinition, LitCoreConstructor } from './types/feature-types.js';
 
 /**
  * Symbol to mark classes that extend LitCore.

@@ -3,16 +3,7 @@ import type { LitCore } from '../lit-core.js';
 import { resolveFeatures } from '../feature-resolver.js';
 import { DebugUtils } from '../debug-utils.js';
 import { performanceMonitor } from '../performance-monitor.js';
-import type { FeatureConfig, LitCoreConstructor, ResolvedFeatures } from '../types/feature-types.js';
-
-// Re-export types for backward compatibility (deprecated)
-/** @deprecated Import from types/feature-types.js instead */
-export type {
-  FeatureClass,
-  FeatureDefinition,
-  FeatureConfigEntry,
-  LitCoreConstructor
-} from '../types/feature-types.js';
+import type { LitCoreConstructor, ResolvedFeatures } from '../types/feature-types.js';
 
 /**
  * Compositional service responsible for managing feature instances and lifecycle.

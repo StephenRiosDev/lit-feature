@@ -6,6 +6,7 @@ export default defineConfig({
     'decorators/index': 'src/decorators/index.ts',
     'decorators/provide': 'src/decorators/provide.ts',
     'decorators/configure': 'src/decorators/configure.ts',
+    'decorators/property': 'src/decorators/feature-property.ts',
     'types/index': 'src/types/index.ts',
     'types/feature-types': 'src/types/feature-types.ts',
     'lit-core': 'src/lit-core.ts',

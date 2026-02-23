@@ -22,20 +22,3 @@ export function getOrCreateFeatureMeta(ctor: any): FeatureMeta {
   }
   return (ctor as any)[FEATURE_META];
 }
-
-// ============================================================================
-// Deprecated: Old array-based metadata (for backward compatibility)
-// ============================================================================
-
-/** @deprecated - Use unified FeatureMeta instead */
-export type FeatureMetaEntry =
-  | {
-      kind: 'provide';
-      name: string;
-      definition: FeatureDefinition;
-    }
-  | {
-      kind: 'configure';
-      name: string;
-      options: FeatureConfigEntry | 'disable';
-    };
