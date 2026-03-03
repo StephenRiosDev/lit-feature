@@ -1,6 +1,6 @@
 {
   "name": "lit-feature",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Core functionalities and components for integrating with the Lit framework.",
   "main": "index.cjs",
   "types": "index.d.ts",
@@ -89,5 +89,5 @@
   "bugs": {
     "url": "https://github.com/StephenRiosDev/lit-feature/issues"
   },
-  "homepage": "https://github.com/StephenRiosDev/lit-feature#readme"
+  "homepage": "https://stephenriosdev.github.io/LitFeature"
 }

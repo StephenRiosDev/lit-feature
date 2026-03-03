@@ -164,23 +164,6 @@ export class AutoDismissFeature extends BaseDismissFeature {
   }
 }
 ```
-
-## Available Demo Features
-
-This repository includes example features demonstrating different use cases:
-
-### Visual Effects
-- **RippleFeature** - Material Design ripple effect on interaction
-- **PulseFeature** - Pulsing animation for attention-grabbing
-
-### Theming
-- **ThemeFeature** - Configurable theme variants with CSS custom properties
-
-### Dismissal Patterns
-- **BaseDismissFeature** - Core dismissal behavior
-- **AutoDismissFeature** - Automatic dismissal after timeout (extends BaseDismiss)
-- **SwipeDismissFeature** - Swipe-to-dismiss with gesture tracking (extends AutoDismiss)
-
 ## API Reference
 
 ### Core Classes
